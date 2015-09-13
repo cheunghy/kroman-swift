@@ -10,6 +10,8 @@
 		1B1404B31BA518CA00322E2B /* Kroman.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1404B21BA518CA00322E2B /* Kroman.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B1404BA1BA518CA00322E2B /* Kroman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1404AF1BA518CA00322E2B /* Kroman.framework */; settings = {ASSET_TAGS = (); }; };
 		1B1404BF1BA518CA00322E2B /* KromanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1404BE1BA518CA00322E2B /* KromanTests.swift */; };
+		1B1404CA1BA5194700322E2B /* Kroman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1404C91BA5194700322E2B /* Kroman.swift */; settings = {ASSET_TAGS = (); }; };
+		1B1404CB1BA5194700322E2B /* Kroman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1404C91BA5194700322E2B /* Kroman.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		1B1404B91BA518CA00322E2B /* KromanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KromanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1404BE1BA518CA00322E2B /* KromanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KromanTests.swift; sourceTree = "<group>"; };
 		1B1404C01BA518CA00322E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B1404C91BA5194700322E2B /* Kroman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kroman.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 			children = (
 				1B1404B21BA518CA00322E2B /* Kroman.h */,
 				1B1404B41BA518CA00322E2B /* Info.plist */,
+				1B1404C91BA5194700322E2B /* Kroman.swift */,
 			);
 			path = Kroman;
 			sourceTree = "<group>";
@@ -142,6 +146,7 @@
 		1B1404A61BA518CA00322E2B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Zhang Kai Yu";
 				TargetAttributes = {
@@ -193,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1404CA1BA5194700322E2B /* Kroman.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B1404BF1BA518CA00322E2B /* KromanTests.swift in Sources */,
+				1B1404CB1BA5194700322E2B /* Kroman.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +314,7 @@
 		1B1404C41BA518CA00322E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +325,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheunghoiyu.Kroman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1B1404C51BA518CA00322E2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -375,6 +385,7 @@
 				1B1404C51BA518CA00322E2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B1404C61BA518CA00322E2B /* Build configuration list for PBXNativeTarget "KromanTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +394,7 @@
 				1B1404C81BA518CA00322E2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

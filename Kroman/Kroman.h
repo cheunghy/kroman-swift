@@ -6,7 +6,7 @@
 //  Copyright © 2015 Zhang Kai Yu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Kroman.
 FOUNDATION_EXPORT double KromanVersionNumber;
